@@ -1,27 +1,23 @@
 # DNA Sequence Analyzer (C++)
 
-A lightweight tool for DNA sequence analysis with core bioinformatics functions.
+A simple console-based tool for analyzing DNA sequences using modern C++.
 
-### Features
-- Load sequences from text files
-- Nucleotide composition analysis
-- Motif search with position tracking
-- Complementary strand generation
-- DNA-to-RNA transcription
+## Features
 
-### Technical Highlights
-- `DNASequence` class with validation
-- RAII file handling
-- Case-insensitive input processing
-- Error-resistant design
+- Load DNA from file (single-line format)
+- Validate DNA (A/T/C/G only)
+- Count nucleotide frequencies
+- Search for motifs (substring matches)
+- Generate complementary strand
+- Transcribe DNA to RNA
 
-### Input Format
-Plain text files containing:
-- A/T/C/G characters (case-insensitive)
-- Single-line sequences
-- Example: `ATGCGTACGTAGCTAGCTAGC...`
+## Design
 
-### Build & Run
-1. Compile with C++17
-2. Execute and provide sequence file
-3. Select analysis options
+- **OOP Structure**: `DNASequence` class encapsulates logic
+- **File I/O**: Reads input file, exception-safe
+- **Utilities**: Uses STL containers, string algorithms, maps
+
+## File Structure
+
+- `DNASequence.h/cpp`: Core sequence logic
+- `main.cpp`: CLI interface
